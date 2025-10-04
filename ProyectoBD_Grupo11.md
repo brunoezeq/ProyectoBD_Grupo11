@@ -77,4 +77,6 @@ A partir de esta pregunta principal, se desprenden los siguientes interrogantes 
 ## Capítulo IV: Desarrollo del Tema / Presentación de Resultados 
 
 ### Modelo Relacional 
+![modelo_relacional](https://github.com/brunoezeq/ProyectoBD_Grupo11/blob/main/ProyectoBD_ModeloRelacional.png)
 
+Aquí el vínculo al [diccionario de datos](./diccionario_datos.pdf)
