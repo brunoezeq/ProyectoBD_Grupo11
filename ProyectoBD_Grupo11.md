@@ -81,7 +81,7 @@ A partir de esta pregunta principal, se desprenden los siguientes interrogantes 
 
 ### Diccionario de datos
 
-Aquí el vínculo al [diccionario de datos](./diccionario_datos.pdf)
+Aquí el vínculo al [diccionario de datos](./docs/diccionario_datos.pdf)
 
 ---
 
