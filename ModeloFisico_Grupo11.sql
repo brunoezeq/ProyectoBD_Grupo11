@@ -25,14 +25,14 @@ CREATE TABLE contenido
 
 CREATE TABLE continente
 (
-  id_continente INT NOT NULL,
+  id_continente INT IDENTITY(1,1) NOT NULL,
   nombre_continente VARCHAR(20) NOT NULL,
   CONSTRAINT pk_continente PRIMARY KEY (id_continente)
 );
 
 CREATE TABLE pais
 (
-  id_pais INT NOT NULL,
+  id_pais INT IDENTITY(1,1) NOT NULL,
   nombre_pais VARCHAR(50) NOT NULL,
   id_continente INT NOT NULL,
   CONSTRAINT pk_pais PRIMARY KEY (id_pais),
@@ -193,3 +193,11 @@ CREATE TABLE perfil
   CONSTRAINT pk_perfil PRIMARY KEY (id_perfil),
   CONSTRAINT fk_perfil_usuario FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
 );
+
+ALTER TABLE episodio DROP CONSTRAINT uq_episodio_numero;
+
+ALTER TABLE episodio
+ADD CONSTRAINT uq_episodio_nro_temporada UNIQUE (nro_episodio, id_temporada, id_contenido);
+
+
+
