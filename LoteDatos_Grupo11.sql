@@ -195,3 +195,4 @@ INSERT INTO perfil (nombre_perfil, restriccion, id_usuario) VALUES
 ('Nicolas', 'Infantil', 2),
 ('Franco', 'Todo público', 3);
 
+select * from tipo_contenido;
