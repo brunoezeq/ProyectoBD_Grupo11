@@ -74,6 +74,38 @@ A partir de esta pregunta principal, se desprenden los siguientes interrogantes 
   - Proponer mecanismos de seguridad básicos, como la encriptación de contraseñas y las restricciones de acceso.
   - Proveer una estructura flexible que permita la escalabilidad del sistema ante el crecimiento futuro del catálogo y la base de usuarios.
 
+## Capítulo II: Marco Conceptual o Referencial
+
+El desarrollo de una plataforma de streaming como FilmStream se enmarca dentro de un contexto de transformación digital impulsado por las Tecnologías de la Información y Comunicación (TICs). Estas innovaciones tecnológicas han reconfigurado radicalmente la industria del entretenimiento, permitiendo la distribución global inmediata de contenido audiovisual y facilitando nuevos modelos de negocio basados en suscripción y acceso bajo demanda.
+
+La globalización, entendida como la intensificación de las relaciones sociales mundiales, se manifiesta en esta industria a través de la convergencia cultural, donde contenidos locales adquieren proyección internacional y las producciones transnacionales se normalizan. Las plataformas de streaming representan un fenómeno de "glocalización", combinando ofertas globales con adaptaciones a contextos regionales específicos.
+
+En el ámbito económico, estas plataformas operan bajo lógicas digitales caracterizadas por externalidades de red, donde el valor del servicio aumenta con el número de usuarios, y economías de escala que reducen los costos marginales de distribución. El crecimiento se sustenta en modelos de suscripción recurrente y en la monetización de datos de comportamiento de los usuarios.
+
+El desarrollo regional se ve impactado a través de la reconfiguración de las cadenas productivas del entretenimiento, donde surgen oportunidades para clusters creativos locales que se insertan en redes globales de valor. La producción se descentraliza geográficamente mientras la distribución se universaliza.
+
+Finalmente, la sustentabilidad en este sector abarca dimensiones económicas (modelos de negocio viables), ambientales (optimización del consumo energético en centros de datos), culturales (preservación y democratización del acceso a producciones diversas) y sociales (acceso inclusivo a contenidos educativos y culturales).
+
+Conceptos clave como "plataforma de streaming", "contenido audiovisual digital", "experiencia de usuario", "algoritmos de recomendación" y "arquitectura multitenancy" constituyen los pilares conceptuales que permiten comprender la complejidad técnica y operativa de sistemas como FilmStream, situando el proyecto dentro de un ecosistema digital en constante evolución donde la innovación tecnológica se articula con transformaciones culturales, económicas y sociales.
+
+## Capítulo III: Metodología Seguida
+
+Este proyecto se realizó siguiendo los siguientes pasos:
+
+### Descripción de cómo se realizó el Trabajo Práctico
+
+- **Elección del tema**: para elegir el tema a desarrollar, cada uno de los integrantes del grupo dió sus ideas. Luego de un intercambio de ideas se procedió a realizar una encuesta via Whatsapp, en donde se colocaron los temas que más satisfacieron al grupo, y el que más votos consiguió fue el ganador.
+- **Creación del modelo conceptual y relacional**: una vez elegido el tema, se realizaron los modelos conceptual y relacional, en donde cada integrante realizaba los cambios que considerara oportuno hasta llegar al modelo definitivo.
+- **División de temas**: se dividieron los temas 1, 2 y 3 entre los integrantes del grupo de manera al azar, y cada uno realizó su respectiva documentación y codificación.
+- **Realización en conjunto del tema 4**: entre los integrantes se desarrolló en conjunto el tema 4 asignado.
+- **Aplicación de todos los temas al script**: se procedió a aplicar todos los scrips hechos en separado al código principal y verificar su coherencia entre los hechos por los demás integrantes.
+
+### Herramientas (Instrumentos y procedimientos)
+
+- **ERD Plus**: es una herramienta de modelado en línea utilizada para crear diagramas entidad-relación (ERD) y esquemas relacionales de manera visual e intuitiva. También sirve para exportar el trabajo a un modelo físico.
+- **SQL Server Management Studio (SSMS)**: es un entorno integrado para gestionar cualquier infraestructura de SQL Server, desde escribir y ejecutar consultas hasta administrar bases de datos y sus componentes.
+- **Microsoft Learn**: Es una plataforma de aprendizaje gratuita de Microsoft que ofrece rutas de capacitación interactivas y documentación oficial para dominar sus tecnologías, como SQL Server y Azure. Muy útil para la investigación de los distintos temas.
+
 ## Capítulo IV: Desarrollo del Tema / Presentación de Resultados 
 
 ### Modelo Relacional 
