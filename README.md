@@ -29,7 +29,7 @@
       - Objetivos Generales
       - Objetivos Específicos
         
-[Capítulo II: Marco Conceptual](#capítulo-ii-marco-conceptual)
+[Capítulo II: Marco Conceptual](#capítulo-ii-marco-conceptual-o-referencial)
 
 [Capítulo III: Metodología Seguida](#capítulo-iii-metodología-seguida)
 
