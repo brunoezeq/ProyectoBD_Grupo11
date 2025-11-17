@@ -107,6 +107,16 @@ VALUES (
   (SELECT id_clasificacion FROM clasificacion WHERE codigo = 'G')
 );
 
+INSERT INTO contenido (titulo, sinopsis, [año_lanzamiento], duracion, id_tipo_contenido, id_clasificacion)
+VALUES (
+  'Stranger Things',
+  'Un niño desaparece en un pequeño pueblo.',
+  2016,
+  NULL,
+  (SELECT id_tipo_contenido FROM tipo_contenido WHERE nombre_contenido = 'Serie'),
+  (SELECT id_clasificacion FROM clasificacion WHERE codigo = 'TV-14')
+);
+
 -- ----- Series: Temporadas y Episodios (para Stranger Things) -----
 INSERT INTO temporada (nro_temporada, resumen, fecha_lanzamiento, id_contenido)
 SELECT 1, 'Primera temporada.', '2016-07-15', c.id_contenido
