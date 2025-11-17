@@ -313,7 +313,7 @@ END;
 
 ## **Tareas**
 
-> Ver el script para entender más [script.sql](script.sql)
+> Ver el script para entender más [script.sql](script_procedimientos_funciones.sql)
 
 ## **Conclución**
 
