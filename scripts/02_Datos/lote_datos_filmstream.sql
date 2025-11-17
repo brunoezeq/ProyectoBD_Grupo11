@@ -93,7 +93,7 @@ VALUES (
   'Un ladrón que roba secretos a través de los sueños.',
   2010,
   128,
-  (SELECT id_tipo_contenido FROM tipo_contenido WHERE nombre_contenido = 'Serie'),
+  (SELECT id_tipo_contenido FROM tipo_contenido WHERE nombre_contenido = 'Pelicula'),
   (SELECT id_clasificacion FROM clasificacion WHERE codigo = 'TV-MA')
 );
 
