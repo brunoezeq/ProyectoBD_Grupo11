@@ -111,7 +111,7 @@ Este proyecto se realizó siguiendo los siguientes pasos:
 ## Capítulo IV: Desarrollo del Tema / Presentación de Resultados 
 
 ### Modelo Relacional 
-![modelo_relacional](./docs/modelo_relacional.png)
+![modelo_relacional](./docs/diagrama_relacional.png)
 
 ## Diccionario de Datos - FilmStream
 
