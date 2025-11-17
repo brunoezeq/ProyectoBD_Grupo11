@@ -1,0 +1,21 @@
+## Optimización de consultas a través de índices
+
+Para optimizar el rendimiento de las consultas en bases de datos, los índices son fundamentales. Sin un índice, buscar un valor en una columna implica recorrer la tabla completa, lo cual es ineficiente en tablas con millones de filas. Los índices funcionan como punteros que agilizan la localización de filas que cumplen condiciones de la cláusula WHERE, mejorando así el tiempo de respuesta.
+
+En SQL Server, los índices agrupados determinan el orden físico de almacenamiento de los registros, mientras que los no agrupados mantienen estructuras separadas que referencian las posiciones de los datos. Por ello, un índice bien diseñado puede reducir significativamente los tiempos de ejecución y la cantidad de lecturas necesarias para resolver una consulta.
+
+No obstante, el uso excesivo de índices puede aumentar el espacio de almacenamiento y ralentizar las operaciones de inserción, actualización y eliminación, ya que cada modificación debe reflejarse en todos los índices asociados. Por tanto, es esencial encontrar un equilibrio entre el número de índices y la eficiencia del sistema.
+
+Entre los tipos de índices más comunes se encuentran:
+
+  - PRIMARY KEY: identifican de forma única cada fila (índice agrupado por defecto).
+  - FOREIGN KEY: referencian claves primarias en otras tablas.
+  - UNIQUE: garantizan la unicidad de valores.
+  - CLUSTERED INDEX: organizan físicamente las filas de la tabla en el orden del índice. Solo puede haber un índice agrupado por tabla, y es ideal para columnas que se buscan o filtran      de manera secuencial, como fechas o IDs
+  - NON-CLUSTERED INDEX: mejoran la búsqueda sin alterar el orden físico de los datos. Contienen una estructura separada que apunta a las ubicaciones de los datos en la tabla.
+  - FULLTEXT INDEX: optimizan búsquedas en campos de texto.
+  - Índices de múltiples columnas o filtrados, útiles para consultas específicas.
+
+En el presente trabajo se aplicaron distintos tipos de índices sobre la tabla reproduccion, perteneciente a la base de datos FilmStream, con el fin de evaluar su impacto en el rendimiento de consultas por rango de fechas.
+En conclusión, los índices deben ser utilizados de manera selectiva para mejorar el rendimiento sin comprometer la eficiencia general de la base de datos.
+
