@@ -147,3 +147,12 @@ En este tema, aprenderemos cómo los índices pueden acelerar las búsquedas, re
 En este tema, exploramos los índices columnares, una tecnología clave para analítica y Data Warehouse. Veremos cómo comprimen datos y aceleran consultas de agregación masivas, comparándolos con los índices tradicionales.
 
 > Acceder a la siguiente carpeta para la descripción completa del tema [Indices Columnares en SQL Server](https://github.com/brunoezeq/ProyectoBD_Grupo11/tree/main/scripts/03_Indices_Columnares)
+
+## Capítulo V: Conclusiones
+
+## Capítulo VI: Bibliografia
+
+1. [Procedimientos Almacenados: ¿Qué son? ¿Para qué sirven? ¿Cómo se usan? de The Coder Cave](https://www.youtube.com/watch?v=XQUPbNFLJn4)
+2. [SQL Stored Procedure (Visually Explained) | Comprehensive Guide de Data with Baara](https://www.youtube.com/watch?v=DX8I5SmB6jo)
+3. [Procedimientos almacenados (motor de base de datos)]([https://youtu.be/XQUPbNFLJn4?si=h7heR32004x5Lr04](https://learn.microsoft.com/es-es/sql/relational-databases/stored-procedures/stored-procedures-database-engine?view=sql-server-ver17))
+4. [MS SQL Stored Procedures & Functions](https://medium.com/@sounder.rahul/ms-sql-stored-procedures-functions-4f762c3d6c47)
