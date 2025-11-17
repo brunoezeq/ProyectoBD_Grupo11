@@ -15,8 +15,6 @@
 
 **Carrera:** Licenciatura en Sistemas de Información 
 
-**Fecha de Entrega:** 29/09/2025
-
 **Año:** 2025
 
 <div style="page-break-after: always;"></div> 
@@ -109,11 +107,11 @@ Este proyecto se realizó siguiendo los siguientes pasos:
 ## Capítulo IV: Desarrollo del Tema / Presentación de Resultados 
 
 ### Modelo Relacional 
-![modelo_relacional](https://github.com/brunoezeq/ProyectoBD_Grupo11/blob/main/ProyectoBD_ModeloRelacional.png)
+![modelo_relacional](./docs/modelo_relacional.png)
 
 ### Diccionario de datos
 
-Aquí el vínculo al [diccionario de datos](./docs/diccionario_datos.pdf)
+Aquí el vínculo al [diccionario de datos](./docs//diccionario_datos.pdf)
 
 ---
 
