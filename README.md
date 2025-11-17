@@ -98,8 +98,8 @@ Este proyecto se realizó siguiendo los siguientes pasos:
 
 - **Elección del tema**: para elegir el tema a desarrollar, cada uno de los integrantes del grupo dió sus ideas. Luego de un intercambio de ideas se procedió a realizar una encuesta via Whatsapp, en donde se colocaron los temas que más satisfacieron al grupo, y el que más votos consiguió fue el ganador.
 - **Creación del modelo conceptual y relacional**: una vez elegido el tema, se realizaron los modelos conceptual y relacional, en donde cada integrante realizaba los cambios que considerara oportuno hasta llegar al modelo definitivo.
-- **División de temas**: se dividieron los temas 1, 2 y 3 entre los integrantes del grupo de manera al azar, y cada uno realizó su respectiva documentación y codificación.
-- **Realización en conjunto del tema 4**: entre los integrantes se desarrolló en conjunto el tema 4 asignado.
+- **División de temas**: se dividieron los temas 1 (Manejo de Transacciones y Transacciones Anidadas), 2 (Procedimientos y Funciones Almacenadas) y 3 (Optimizacion de Consultas a traves de Indices) entre los integrantes del grupo de manera al azar, y cada uno realizó su respectiva documentación y codificación.
+- **Realización en conjunto del tema 4**: entre los integrantes se desarrolló en conjunto el tema 4 asignado (Indices Columnares en SQL Server).
 - **Aplicación de todos los temas al script**: se procedió a aplicar todos los scrips hechos en separado al código principal y verificar su coherencia entre los hechos por los demás integrantes.
 
 ### Herramientas (Instrumentos y procedimientos)
@@ -107,6 +107,7 @@ Este proyecto se realizó siguiendo los siguientes pasos:
 - **ERD Plus**: es una herramienta de modelado en línea utilizada para crear diagramas entidad-relación (ERD) y esquemas relacionales de manera visual e intuitiva. También sirve para exportar el trabajo a un modelo físico.
 - **SQL Server Management Studio (SSMS)**: es un entorno integrado para gestionar cualquier infraestructura de SQL Server, desde escribir y ejecutar consultas hasta administrar bases de datos y sus componentes.
 - **Microsoft Learn**: Es una plataforma de aprendizaje gratuita de Microsoft que ofrece rutas de capacitación interactivas y documentación oficial para dominar sus tecnologías, como SQL Server y Azure. Muy útil para la investigación de los distintos temas.
+- **MermaidChart**: Es una herramienta en línea que permite crear diagramas (de flujo, de secuencia y relacionales de bases de datos) simplemente escribiendo texto.
 
 ## Capítulo IV: Desarrollo del Tema / Presentación de Resultados 
 
@@ -114,8 +115,31 @@ Este proyecto se realizó siguiendo los siguientes pasos:
 ![modelo_relacional](./docs/diagrama_relacional.png)
 
 ## Diccionario de Datos - FilmStream
-
 Aquí el [diccionario de datos](./docs/diccionario_datos.pdf)
+
+### Manejo de Transacciones y Transacciones Anidadadas
+
+En este tema, exploraremos cómo asegurar la integridad de los datos (ACID) al agrupar operaciones. Aprendemos a confirmar cambios con COMMIT, revertir errores con ROLLBACK y gestionar la complejidad de las transacciones anidadas. 
+
+> Acceder a la siguiente carpeta para la descripción completa del tema [Manejo de Transacciones y Transacciones Anidadas](https://github.com/brunoezeq/ProyectoBD_Grupo11/tree/main/scripts/05_Manejo_Transacciones).
+
+### Procedimientos y Funciones Almacenadas
+
+En este tema, descubrimos cómo los procedimientos almacenados pueden automatizar tareas repetitivas, gestionar transacciones y mejorar el control de los datos, mientras que las funciones almacenadas facilitan cálculos y transformaciones en tiempo real.
+
+> Acceder a la siguiente carpeta para la descripción completa del tema [Procedimientos y Funciones Almacenadas](https://github.com/brunoezeq/ProyectoBD_Grupo11/tree/main/scripts/04_Procedimientos_y_Funciones)
+
+### Optimizacion de Consultas a traves de Indices
+
+En este tema, aprenderemos cómo los índices pueden acelerar las búsquedas, reducir el tiempo de respuesta en operaciones de lectura y mejorar el rendimiento general del sistema. Exploramos los diferentes tipos de índices, cómo y cuándo aplicarlos, y una comparación real de qué tan eficientes son.
+
+> Acceder a la siguiente carpeta para la descripción completa del tema [Optimizacion de Consultas a traves de Indices](https://github.com/brunoezeq/ProyectoBD_Grupo11/tree/main/scripts/06_Optimizacion_Consultas)
+
+### Indices Columnares en SQL Server
+
+En este tema, exploramos los índices columnares, una tecnología clave para analítica y Data Warehouse. Veremos cómo comprimen datos y aceleran consultas de agregación masivas, comparándolos con los índices tradicionales.
+
+> Acceder a la siguiente carpeta para la descripción completa del tema [Indices Columnares en SQL Server](https://github.com/brunoezeq/ProyectoBD_Grupo11/tree/main/scripts/03_Indices_Columnares)
 
 ### Características de la Tabla
 - **Nombre**: tipo_contenido
