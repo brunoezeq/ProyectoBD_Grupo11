@@ -1,0 +1,23 @@
+# SQL Server
+*.bak
+*.log
+*.ldf
+*.mdf
+*.ndf
+
+# Backups
+*_backup/
+*.backup
+
+# Temporal
+temp/
+tmp/
+*.tmp
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Sistema
+.DS_Store
+Thumbs.db
