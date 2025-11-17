@@ -31,11 +31,6 @@
         
 [Capítulo II: Marco Conceptual](#capítulo-ii-marco-conceptual)
 
-  - Manejo de transacciones.
-  - Procedimientos y funciones almacenadas.
-  - Optimización de consultas a través de índices.
-  - Índices columnares
-
 [Capítulo III: Metodología Seguida](#capítulo-iii-metodología-seguida)
 
   - Descripción de cómo se realizó el Trabajo Práctico
@@ -94,56 +89,6 @@ El desarrollo regional se ve impactado a través de la reconfiguración de las c
 Finalmente, la sustentabilidad en este sector abarca dimensiones económicas (modelos de negocio viables), ambientales (optimización del consumo energético en centros de datos), culturales (preservación y democratización del acceso a producciones diversas) y sociales (acceso inclusivo a contenidos educativos y culturales).
 
 Conceptos clave como "plataforma de streaming", "contenido audiovisual digital", "experiencia de usuario", "algoritmos de recomendación" y "arquitectura multitenancy" constituyen los pilares conceptuales que permiten comprender la complejidad técnica y operativa de sistemas como FilmStream, situando el proyecto dentro de un ecosistema digital en constante evolución donde la innovación tecnológica se articula con transformaciones culturales, económicas y sociales.
-
-### Manejo de transacciones 
-    
-### Procedimientos y funciones almacenadas
-    
-### Optimización de consultas a través de índices
-
-Para optimizar el rendimiento de las consultas en bases de datos, los índices son fundamentales. Sin un índice, buscar un valor en una columna implica recorrer la tabla completa, lo cual es ineficiente en tablas con millones de filas. Los índices funcionan como punteros que agilizan la localización de filas que cumplen condiciones de la cláusula WHERE, mejorando así el tiempo de respuesta.
-
-En SQL Server, los índices agrupados determinan el orden físico de almacenamiento de los registros, mientras que los no agrupados mantienen estructuras separadas que referencian las posiciones de los datos. Por ello, un índice bien diseñado puede reducir significativamente los tiempos de ejecución y la cantidad de lecturas necesarias para resolver una consulta.
-
-No obstante, el uso excesivo de índices puede aumentar el espacio de almacenamiento y ralentizar las operaciones de inserción, actualización y eliminación, ya que cada modificación debe reflejarse en todos los índices asociados. Por tanto, es esencial encontrar un equilibrio entre el número de índices y la eficiencia del sistema.
-
-Entre los tipos de índices más comunes se encuentran:
-
-  - PRIMARY KEY: identifican de forma única cada fila (índice agrupado por defecto).
-  - FOREIGN KEY: referencian claves primarias en otras tablas.
-  - UNIQUE: garantizan la unicidad de valores.
-  - CLUSTERED INDEX: organizan físicamente las filas de la tabla en el orden del índice. Solo puede haber un índice agrupado por tabla, y es ideal para columnas que se buscan o filtran      de manera secuencial, como fechas o IDs
-  - NON-CLUSTERED INDEX: mejoran la búsqueda sin alterar el orden físico de los datos. Contienen una estructura separada que apunta a las ubicaciones de los datos en la tabla.
-  - FULLTEXT INDEX: optimizan búsquedas en campos de texto.
-  - Índices de múltiples columnas o filtrados, útiles para consultas específicas.
-
-En el presente trabajo se aplicaron distintos tipos de índices sobre la tabla reproduccion, perteneciente a la base de datos FilmStream, con el fin de evaluar su impacto en el rendimiento de consultas por rango de fechas.
-En conclusión, los índices deben ser utilizados de manera selectiva para mejorar el rendimiento sin comprometer la eficiencia general de la base de datos.
-    
-### Índices columnares 
-
-Los índices columnares se tratan de un tipo de índice especializado introducido por Microsoft SQL Server con el objetivo de optimizar el rendimiento de consultas analíticas sobre grandes volúmenes de datos.
-A diferencia de los índices tradicionales, los cuales almacenas la información por filas (rowstore), los índices columnares almacenan los datos por columnas, lo cual permite niveles de compresión muy altos y mayor eficiencia en las lecturas.
-
-Este tipo de índices es apropiado para cargas de trabajo analíticas como por ejemplo, reportes, dashboards, consultas que recorren millones de registros, agrupaciones y análisis de pratrones. Su tecnología también es clave para entornos de Big Data, Data Warehousing y sistemas con altos volumen de datos históricos.
-
-Entre los tipos de índices columnares se encuentran:
-
-  - Clustered Columnstore Index: remplaza el almacenamiento original de la          tabla. Máxima comprensión y rendimiento analítico.
-  - Nonclustered Columnstore Index: es agregado como índice adicional. Ideal para   bases OLPT con algunos reportes.
-    
-Ventajas y Desventajas de los Índices columnares:
-
-- Ventajas:
-    - Alta compresión de datos.
-    - Menos I/O.
-    - Batch Execution Mode.
-    - Excelente rendimiento en consultas analíticas.
-
-- Desventajas:
-    - No recomendado para tablas con muchos INSERT/UPDATE.
-    - Las filas no se almacenan completas.
-    - No reemplaza los índices tradicionales.
 
 ## Capítulo III: Metodología Seguida
 
