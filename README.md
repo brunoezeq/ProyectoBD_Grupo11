@@ -115,6 +115,8 @@ Este proyecto se realizó siguiendo los siguientes pasos:
 
 ## Diccionario de Datos - FilmStream
 
+Aquí el [diccionario de datos](./docs/diccionario_datos.pdf)
+
 ### Características de la Tabla
 - **Nombre**: tipo_contenido
 - **Descripción**: Almacena los tipos de contenido disponibles (película, serie, documental, etc.)
