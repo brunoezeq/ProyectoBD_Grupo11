@@ -118,11 +118,11 @@ Este proyecto se realizó siguiendo los siguientes pasos:
 Consulta el [diccionario de datos completo](./docs/diccionario/) para ver el detalle de todas las tablas.
 
 Tablas principales:
-contenido: Películas, series y documentales
-usuario: Datos de usuarios registrados
-suscripcion: Planes y fechas de suscripción
-reproduccion: Historial de visualización
-Ver más en el [diccionario completo](./docs/diccionario/)
+- contenido: Películas, series y documentales
+- usuario: Datos de usuarios registrados
+- suscripcion: Planes y fechas de suscripción
+- reproduccion: Historial de visualización
+- Ver más en el [diccionario completo](./docs/diccionario/)
 
 ### Manejo de Transacciones y Transacciones Anidadadas
 
@@ -150,9 +150,22 @@ En este tema, exploramos los índices columnares, una tecnología clave para ana
 
 ## Capítulo V: Conclusiones
 
-## Capítulo VI: Bibliografia
+A lo largo del desarrollo de este proyecto se han implementado y evaluado diferentes técnicas de optimización y gestión de bases de datos en SQL Server, obteniendo resultados significativos que permiten comprender el impacto real de cada estrategia en el rendimiento y la integridad de los datos.
+
+En el ámbito de las transacciones, se demostró la importancia crítica del manejo de operaciones atómicas para preservar la consistencia de los datos. La implementación de bloques BEGIN TRY/BEGIN CATCH con control explícito de COMMIT y ROLLBACK permitió garantizar que operaciones complejas que involucraban múltiples inserciones en tablas relacionadas se ejecutaran de manera completa o no se ejecutaran en absoluto, previniendo estados inconsistentes en la base de datos. La prueba intencional de errores durante la transacción confirmó que el mecanismo de rollback funciona efectivamente, revirtiendo todas las operaciones pendientes y manteniendo la base de datos en su estado original.
+
+Respecto a los procedimientos y funciones almacenadas, se comprobó su valor no solo para encapsular lógica de negocio compleja, sino también para mejorar significativamente la mantenibilidad y seguridad de las operaciones de base de datos. Los procedimientos desarrollados para inserción, actualización y eliminación de contenidos demostraron una robustez notable al incorporar validaciones de negocio, manejo de errores estructurado y operaciones en cascada controladas. La comparación de rendimiento reveló que, aunque los procedimientos almacenados pueden introducir una sobrecarga mínima en operaciones simples, esta es ampliamente compensada por los beneficios en control transaccional, seguridad y reducción de tráfico de red en aplicaciones cliente-servidor.
+
+En el análisis de optimización mediante índices tradicionales, los resultados fueron particularmente reveladores. La implementación de un índice agrupado sobre la columna de fecha en la tabla de reproducciones redujo las lecturas lógicas de 4,714 a 716, representando una mejora del 85% en eficiencia de E/S. El tiempo de CPU disminuyó de 204 ms a 31 ms, confirmando que la estructura ordenada del índice agrupado permite al motor de base de datos localizar y recuperar datos de manera más eficiente. Sin embargo, el experimento con índices de múltiples columnas demostró que el diseño de índices requiere un equilibrio cuidadoso - mientras que se logró una reducción adicional en lecturas lógicas (649), el aumento en complejidad resultó en un mayor consumo de CPU (78 ms), destacando la importancia del principio "menos es más" en el diseño de índices.
+
+La evaluación de índices columnares representó el hallazgo más impactante en términos de optimización para cargas de trabajo analíticas. La misma consulta que en la tabla tradicional requería 4,714 lecturas lógicas, en la tabla con índice columnar se ejecutó con 0 lecturas lógicas tradicionales, procesando únicamente segmentos columnares comprimidos. La reducción en tiempo de CPU de 157 ms a 93 ms, combinada con la drástica disminución en E/S, valida la superioridad de esta tecnología para escenarios de business intelligence y reporting donde predominan las consultas de agregación y filtrado sobre grandes volúmenes de datos.
+
+En conclusión, los objetivos del proyecto fueron ampliamente alcanzados, demostrando no solo el dominio técnico de las funcionalidades evaluadas sino también la capacidad de analizar críticamente los resultados y extraer conclusiones prácticas aplicables a escenarios del mundo real. Cada técnica estudiada mostró un perfil distintivo de ventajas y consideraciones, reforzando que la optimización de bases de datos es un proceso multidimensional que requiere comprender tanto la tecnología disponible como las características específicas de la carga de trabajo a optimizar.
+
+## Capítulo VI: Bibliografía
 
 1. [Procedimientos Almacenados: ¿Qué son? ¿Para qué sirven? ¿Cómo se usan? de The Coder Cave](https://www.youtube.com/watch?v=XQUPbNFLJn4)
 2. [SQL Stored Procedure (Visually Explained) | Comprehensive Guide de Data with Baara](https://www.youtube.com/watch?v=DX8I5SmB6jo)
 3. [Procedimientos almacenados (motor de base de datos)](https://learn.microsoft.com/es-es/sql/relational-databases/stored-procedures/stored-procedures-database-engine?view=sql-server-ver17)
 4. [MS SQL Stored Procedures & Functions](https://medium.com/@sounder.rahul/ms-sql-stored-procedures-functions-4f762c3d6c47)
+5. [Transacciones (Transact-SQL)](https://learn.microsoft.com/es-es/sql/t-sql/language-elements/transactions-transact-sql?view=sql-server-ver17)
